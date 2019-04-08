@@ -1,0 +1,13 @@
+$(document).ready(function(e){
+	var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, {constrainWidth: false});
+});
+
+function switchTheme(e){
+	var style = document.getElementById('main_style');
+	style.href = 'css/' + (e ? 'dark.rodchenk.css' : 'light.rodchenk.css');
+}
+function switchLanguage(lang){
+	document.getElementById('lang-switcher').text = lang;
+	//$('#lang-switcher').val(lang);
+}

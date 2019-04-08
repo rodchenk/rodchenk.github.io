@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mischa Rodchenkov</title>
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/lib/materialize.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lib/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lib/ionicons/ionicons.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+	<script type="text/javascript" src="js/rodchenk.js"></script>
+	<link rel="stylesheet" type="text/css" id="main_style" href="css/light.rodchenk.css">
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+</head>
+<body>
+	<header class="p-2">
+		<div class="container-fluid row mb-0">
+			<div class="col-3">
+				<img src="img/41Jg59Q4POL.png" class="img-fluid" style="max-height: 25px">
+				<span class="p-1 d-inline-block">Mischa Rodchenkov</span>
+			</div>
+			<div class="col-6">
+				something
+			</div>
+			<div class="switch col-3 text-right">
+				<label>
+					light
+					<input type="checkbox" onchange="switchTheme(this.checked)">
+					<span class="lever"></span>
+					dark
+				</label>
+				  <!-- Dropdown Trigger -->
+				<a id="lang-switcher" class="dropdown-trigger btn ml-3" href="#" data-target="lang-drop">en</a>
+				<!-- Dropdown Structure -->
+				<ul id="lang-drop" class="dropdown-content border-0 shadow rounded">
+					<li>
+						<a href="#!" onclick="switchLanguage('en')">
+							<img src="img/usa.jpg" width="30" height="20" class="mr-2">
+							English
+						</a>
+					</li>
+					<li>
+						<a href="#!" onclick="switchLanguage('de')">
+							<img src="img/german.png" width="30" height="20" class="mr-2">
+							Deutsch
+						</a>
+					</li>
+					<li>
+						<a href="#!" onclick="switchLanguage('ru')">
+							<img src="img/russia.png" width="30" height="20" class="mr-2">
+							Русский
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
