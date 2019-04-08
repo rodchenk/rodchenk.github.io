@@ -1,14 +1,32 @@
 @import url("color.css");
 
 body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Poiret One', cursive;
 	background-color: var(--dark);
 	min-height: 100vh;
+	transition: 1000ms;
 }
 header{
 	background-color: var(--dark);
-	color: var(--light)
+	color: var(--light);
 }
 .switch label .lever{
 	background-color: rgb(91, 91, 91);
+}
+a{
+	text-decoration: none !important;
+}
+a.btn:hover{
+	color: inherit;
+}
+.dropdown-content{
+	width: unset !important;
+	height: unset !important;
+}
+.navig a{
+	transition: 250ms;
+	color: var(--teal);
+}
+.navig a:hover{
+	color: var(--light);
 }

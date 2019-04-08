@@ -1,9 +1,10 @@
 @import url("color.css");
 
 body{
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Poiret One', cursive;
 	background-color: var(--light);
 	min-height: 100vh;
+	transition: 1000ms;
 }
 header{
 	background-color: var(--dark);
@@ -21,4 +22,14 @@ a.btn:hover{
 .dropdown-content{
 	width: unset !important;
 	height: unset !important;
+}
+.navig a{
+	transition: 250ms;
+	color: var(--light);
+}
+.navig a:hover{
+	color: var(--teal);
+}
+#lang-switcher{
+	background-color: #313131
 }

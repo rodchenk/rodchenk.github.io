@@ -9,5 +9,14 @@ function switchTheme(e){
 }
 function switchLanguage(lang){
 	document.getElementById('lang-switcher').text = lang;
-	//$('#lang-switcher').val(lang);
+	setTranslation(lang);
+}
+function translate(word, language){
+	return translation[language][word] === undefined ? word : translation[language][word];
+}
+function setTranslation(lang){
+	var words = document.getElementsByClassName('translate');
+	for (var i = 0; i < words.length; i++) {
+		words[i].innerHTML = translate(words[i].getAttribute('data-word'), lang);
+	}
 }
