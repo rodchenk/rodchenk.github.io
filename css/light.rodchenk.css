@@ -2,12 +2,13 @@
 
 body{
 	font-family: 'Raleway', sans-serif;
-	background-color: var(--white);
+	background-color: var(--light);
 	min-height: 100vh;
 	transition: 1000ms;
 }
 header{
 	color: var(--dark);
+	background-color: var(--white);
 	transition: inherit;
 }
 #logo{
@@ -78,6 +79,7 @@ a.btn:hover{
 .mcard{
 	background-color: var(--white);
 	transition: 250ms;
+	margin: 2px 1em;
 }
 .mcard>img{
 	height: 180px;
@@ -111,4 +113,18 @@ a.btn:hover{
 	background-image: url(../img/cosmos.png);
 	background-attachment: fixed;
 	background-size: contain;
+}
+div.slick-list.draggable{
+	padding: 2rem 0 !important
+}
+.slick-prev:before,
+.slick-next:before{
+	z-index: 999;
+	color: var(--blue)
+}
+#about_me_block{
+	background-color: var(--white)
+}
+.grid-item{
+	width: 25%;
 }

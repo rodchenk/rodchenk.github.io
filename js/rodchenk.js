@@ -1,6 +1,16 @@
 $(document).ready(function(e){
 	var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems, {constrainWidth: false});
+    $('.materialboxed').materialbox();
+    $('.project-slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		dots: true
+	});
+	$('.grid').masonry({
+	  itemSelector: '.grid-item',
+	});
 });
 
 function switchTheme(e){

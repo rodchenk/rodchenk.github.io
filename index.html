@@ -6,10 +6,14 @@
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript" src="js/lib/materialize.min.js"></script>
+	<script type="text/javascript" src="js/lib/slick.min.js"></script>
+	<script type="text/javascript" src="js/lib/masory.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/lib/materialize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/lib/ionicons/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="css/lib/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/lib/slick-theme.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -24,7 +28,7 @@
 		<div class="container-fluid row mb-0">
 			<div class="col-3" id="logo"></div>
 			<div class="col-6 text-center navig">
-				<div class="d-inline-block mx-3 px-2">
+				<!-- <div class="d-inline-block mx-3 px-2">
 					<a class="translate p-1" href="#" data-word="start">About me</a>
 				</div>
 				<div class="d-inline-block mx-3 px-2">
@@ -32,7 +36,7 @@
 				</div>
 				<div class="d-inline-block mx-3 px-2">
 					<a class="translate p-1" href="#" data-word="contact">Contact</a>
-				</div>
+				</div> -->
 			</div>
 			<div class="switch col-3 text-right">
 				
@@ -71,6 +75,7 @@
 	</header>
 	<main>
 		<div id="cover"></div>
+
 		<div class="container-fluid p-5" id="about_me_block">
 			<div class="row">
 				<div class="col-6">
@@ -102,97 +107,114 @@
 				</div>
 			</div>
 		</div>
-		<div class="container-fluid p-5">
-			<h3 class="p-3">My projects</h3>
-			<div class="row">
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/pr1.PNG" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Hotel
-								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">Materialize</span>
-							<span class="mbadge">Bootstrap</span>
-							<span class="mbadge">JS libs</span>
-						</div>
+
+		<div class="container-fluid p-2 px-5 pb-4">
+			<div class="project-slider">
+				<div class="mcard rounded shadow-sm">
+					<img src="img/pr1.PNG" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Hotel
+							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">Materialize</span>
+						<span class="mbadge">Bootstrap</span>
+						<span class="mbadge">JS libs</span>
 					</div>
 				</div>
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/pr2.PNG" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Study block
-								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">JavaScript</span>
-							<span class="mbadge">Bootstrap</span>
-						</div>
+				<div class="mcard rounded shadow-sm">
+					<img src="img/pr2.PNG" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Study block
+							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">JavaScript</span>
+						<span class="mbadge">Bootstrap</span>
 					</div>
 				</div>
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/pr3.PNG" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Online shop
-								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">CakePHP</span>
-							<span class="mbadge">MySQL</span>
-						</div>
+				<div class="mcard rounded shadow-sm">
+					<img src="img/pr3.PNG" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Online shop
+							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">CakePHP</span>
+						<span class="mbadge">MySQL</span>
 					</div>
 				</div>
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/pr4.PNG" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Price generator
-								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">Camunda API</span>
-							<span class="mbadge">CakePHP</span>
-							<span class="mbadge">Java</span>
-						</div>
+				<div class="mcard rounded shadow-sm">
+					<img src="img/pr4.PNG" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Price generator
+							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">Camunda API</span>
+						<span class="mbadge">CakePHP</span>
+						<span class="mbadge">Java</span>
 					</div>
 				</div>
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/admin.png" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Admin panel
-								<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">ChartJS</span>
-							<span class="mbadge">CakePHP</span>
-							<span class="mbadge">ReactJS</span>
-						</div>
+				<div class="mcard rounded shadow-sm">
+					<img src="img/admin.png" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Admin panel
+							<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">ChartJS</span>
+						<span class="mbadge">CakePHP</span>
+						<span class="mbadge">ReactJS</span>
 					</div>
 				</div>
-				<div class="col-4 mb-3">
-					<div class="mcard rounded shadow">
-						<img src="img/pr6.PNG" class="img-fluid rounded-top">
-						<div class="p-3">
-							<h4 class="m-0 p-2">
-								Social network
-								<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
-							</h4>
-							<p>A small presentation for a hotel</p>
-							<span class="mbadge">JavaScript</span>
-							<span class="mbadge">php</span>
-							<span class="mbadge">RESTful API</span>
-							<span class="mbadge">Java Spring</span>
-						</div>
+				<div class="mcard rounded shadow-sm">
+					<img src="img/pr6.PNG" class="img-fluid rounded-top">
+					<div class="p-3">
+						<h4 class="m-0 p-2">
+							Social network
+							<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+						</h4>
+						<p>A small presentation for a hotel</p>
+						<span class="mbadge">JavaScript</span>
+						<span class="mbadge">php</span>
+						<span class="mbadge">RESTful API</span>
+						<span class="mbadge">Java Spring</span>
 					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="container-fluid p-0">
+			<div class="grid p-0 m-0">
+				<div class="grid-item">
+					<img src="./img/p/1p.png" class="img-fluid materialboxed">
+					<img src="img/p/2p.png" class="img-fluid materialboxed">
+					<img src="img/p/3p.png" class="img-fluid materialboxed">
+					<img src="img/p/4p.png" class="img-fluid materialboxed">
+				</div>
+				<div class="grid-item">
+					<img src="img/p/5p.png" class="img-fluid materialboxed">
+					<img src="img/p/6p.png" class="img-fluid materialboxed">
+					<img src="img/p/7p.png" class="img-fluid materialboxed">
+					<img src="img/p/8p.png" class="img-fluid materialboxed">
+				</div>
+				<div class="grid-item">
+					<img src="img/p/9p.png" class="img-fluid materialboxed">
+					<img src="img/p/10p.png" class="img-fluid materialboxed">
+					<img src="img/p/11p.png" class="img-fluid materialboxed">
+					<img src="img/p/12p.png" class="img-fluid materialboxed">
+				</div>
+				<div class="grid-item">
+					<img src="img/p/13p.png" class="img-fluid materialboxed">
+					<img src="img/p/14p.png" class="img-fluid materialboxed">
+					<img src="img/p/16p.png" class="img-fluid materialboxed">
 				</div>
 			</div>
 		</div>
