@@ -134,3 +134,6 @@ div.slick-list.draggable{
 .container-fluid>h5{
 	color: var(--light)
 }
+a.btn{
+	background-color: var(--light-red)
+}
