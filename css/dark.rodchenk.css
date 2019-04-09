@@ -7,6 +7,7 @@ body{
 	transition: 1000ms;
 }
 header{
+	background-color: var(--dark);
 	color: var(--light);
 }
 .switch label .lever{
@@ -75,7 +76,7 @@ a.btn:hover{
 #about_me_block ul li i{
 	color: var(--light-red);
 }
-#about_me_block ul li{
+#about_me_block {
 	color: var(--light);
 }
 .mcard{
@@ -130,6 +131,6 @@ div.slick-list.draggable{
 .slick-dots li button:before{
 	color: #ab3573
 }
-.grid-item{
-	width: 25%;
+.container-fluid>h5{
+	color: var(--light)
 }

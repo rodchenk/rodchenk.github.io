@@ -24,7 +24,7 @@
 
 </head>
 <body>
-	<header class="p-3">
+	<header class="p-3 sticky-top">
 		<div class="container-fluid row mb-0">
 			<div class="col-3" id="logo"></div>
 			<div class="col-6 text-center navig">
@@ -79,9 +79,21 @@
 		<div class="container-fluid p-5" id="about_me_block">
 			<div class="row">
 				<div class="col-6">
-					Geb. in Ukraine am 26. Juni
+					<img src="img/me.jpg" class="img-fluid p-3" style="width: 150px; height: 150px;border-radius: 50%; object-fit: cover;">
+					<div class="d-inline-block">
+						<h5 class="d-inline-block font-weight-bold mb-1 translate" data-word="my_name">Mischa Rodchenkov</h5>
+						<br>
+						<small class="translate" data-word="position">Softwareentwickler bei iCode GmbH, Berlin</small>
+					</div>
+					<p style="line-height: 2" class="translate" data-word="my_bio">
+						Ich bin in der Ukraine (Krim) am 26. Juni geboren. Ich studiere momentan Wirtschaftsinformatik an der Technische Hochschule Brandenburg. Seit 2017 bin ich bei iCode GmbH als Softwareentwickler tätig. Meine Hobbies sind Reisen und Web Design. Schreiben Sie mir eine Mail, falls ich Ihre Interesse geweckt habe: 
+					</p>
+					<span class="text-secondary">rodchenkov.misha@no</span>
+					<div class="text-right">
+						<a href="./design" class="btn px-3 text-white translate" data-word="design_btn">Design portfolio</a>
+					</div>					
 				</div>
-				<div class="col-6">
+				<div class="col-6 pl-5">
 					<ul style="line-height: 3">
 						<li>
 							<i class="icon ion-ios-code mr-3"></i>
@@ -93,7 +105,7 @@
 						</li>
 						<li>
 							<i class="icon ion-ios-git-network mr-3"></i>
-							<span>Git, Tortoise SVN</span>
+							<span>Git, Tortoise SVN, Unix-Systems</span>
 						</li>
 						<li>
 							<i class="icon ion-ios-laptop mr-3"></i>
@@ -103,21 +115,30 @@
 							<i class="icon ion-ios-cloud-outline mr-3"></i>
 							<span>XML, JSON, MySQL, NoSQL</span>
 						</li>
+						<li>
+							<i class="icon ion-ios-expand mr-3"></i>
+							<span>Microservice Architecture, Client-Server-Architecture, SOA</span>
+						</li>
+						<li>
+							<i class="icon ion-ios-calculator mr-3"></i>
+							<span class="translate" data-word="list_item">Projektmanagement (Scrum), Wirtschaftwissenschaften</span>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
 		<div class="container-fluid p-2 px-5 pb-4">
+			<h5 class="text-center translate" data-word="some_of_my_projects">Some of my projects<i class="icon ion-ios-construct ml-3"></i></h5>
 			<div class="project-slider">
 				<div class="mcard rounded shadow-sm">
 					<img src="img/pr1.PNG" class="img-fluid rounded-top">
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Hotel
-							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							<a href="https://rodchenk.github.io/josephine/" class="ml-4 mb-2 btn float-right translate" data-word="see">See</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p1_desc">A small presentation of future website for a hotel (in russian)</p>
 						<span class="mbadge">Materialize</span>
 						<span class="mbadge">Bootstrap</span>
 						<span class="mbadge">JS libs</span>
@@ -128,9 +149,9 @@
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Study block
-							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							<a href="https://rodchenk.github.io/foliage/" target="_blanc" class="ml-4 mb-2 btn float-right translate" data-word="see">See</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p2_desc">A web site to note and documentate university courses</p>
 						<span class="mbadge">JavaScript</span>
 						<span class="mbadge">Bootstrap</span>
 					</div>
@@ -140,9 +161,9 @@
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Online shop
-							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							<a href="https://github.com/rodchenk/elegia" target="_blanc" class="ml-4 mb-2 btn float-right translate" data-word="see">See</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p3_desc">Small online shop for local supermarkets, developed with CakePHP</p>
 						<span class="mbadge">CakePHP</span>
 						<span class="mbadge">MySQL</span>
 					</div>
@@ -152,9 +173,9 @@
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Price generator
-							<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							<a href="https://github.com/rodchenk/foliage-apartments-bpmn" class="ml-4 mb-2 btn float-right translate" data-word="see">See</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p4_desc">A programm that generates dynamic prices for hotel rooms based on day</p>
 						<span class="mbadge">Camunda API</span>
 						<span class="mbadge">CakePHP</span>
 						<span class="mbadge">Java</span>
@@ -165,9 +186,9 @@
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Admin panel
-							<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+							<a href="#" class="ml-4 mb-2 btn float-right translate" data-word="closed" disabled>closed</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p5_desc">Administration Panel for another <span class="font-weight-bold">presence application</span> for small comanies</p>
 						<span class="mbadge">ChartJS</span>
 						<span class="mbadge">CakePHP</span>
 						<span class="mbadge">ReactJS</span>
@@ -178,46 +199,20 @@
 					<div class="p-3">
 						<h4 class="m-0 p-2">
 							Social network
-							<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+							<a href="#" class="ml-4 mb-2 btn float-right translate" data-word="closed" disabled>closed</a>
 						</h4>
-						<p>A small presentation for a hotel</p>
+						<p class="translate" data-word="p6_desc">Social network for activities and events with activity-map</p>
 						<span class="mbadge">JavaScript</span>
 						<span class="mbadge">php</span>
 						<span class="mbadge">RESTful API</span>
 						<span class="mbadge">Java Spring</span>
 					</div>
 				</div>
-				
-			</div>
-		</div>
-		
-		<div class="container-fluid p-0">
-			<div class="grid p-0 m-0">
-				<div class="grid-item">
-					<img src="./img/p/1p.png" class="img-fluid materialboxed">
-					<img src="img/p/2p.png" class="img-fluid materialboxed">
-					<img src="img/p/3p.png" class="img-fluid materialboxed">
-					<img src="img/p/4p.png" class="img-fluid materialboxed">
-				</div>
-				<div class="grid-item">
-					<img src="img/p/5p.png" class="img-fluid materialboxed">
-					<img src="img/p/6p.png" class="img-fluid materialboxed">
-					<img src="img/p/7p.png" class="img-fluid materialboxed">
-					<img src="img/p/8p.png" class="img-fluid materialboxed">
-				</div>
-				<div class="grid-item">
-					<img src="img/p/9p.png" class="img-fluid materialboxed">
-					<img src="img/p/10p.png" class="img-fluid materialboxed">
-					<img src="img/p/11p.png" class="img-fluid materialboxed">
-					<img src="img/p/12p.png" class="img-fluid materialboxed">
-				</div>
-				<div class="grid-item">
-					<img src="img/p/13p.png" class="img-fluid materialboxed">
-					<img src="img/p/14p.png" class="img-fluid materialboxed">
-					<img src="img/p/16p.png" class="img-fluid materialboxed">
-				</div>
 			</div>
 		</div>
 	</main>
+	<footer>
+		
+	</footer>
 </body>
 </html>
