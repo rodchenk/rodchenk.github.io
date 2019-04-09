@@ -7,7 +7,6 @@ body{
 	transition: 1000ms;
 }
 header{
-	background-color: var(--dark);
 	color: var(--light);
 }
 .switch label .lever{
@@ -65,4 +64,47 @@ a.btn:hover{
 }
 .btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i{
 	font-size: 1rem;
+}
+#logo{
+	background-image: url(../img/logo.png);
+	background-size: contain;
+	width: 160px; 
+	height: 28px;
+	background-repeat: no-repeat;
+}
+#about_me_block ul li i{
+	color: var(--light-red);
+}
+#about_me_block ul li{
+	color: var(--light);
+}
+.mcard{
+	background-color: var(--light-dark);
+	transition: 250ms;
+	color: var(--light)
+}
+.mcard>img{
+	height: 180px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.mcard:hover{
+	transform: scale(1.01);
+}
+.mcard a.btn{
+	background-color: var(--light-red)
+}
+.mcard h4{
+	font-size: 1.5rem;
+	font-weight: bold
+}
+.mbadge{
+	background-color: #68697d;
+	display: inline-block;
+	padding: 3px 7px;
+	font-size: 0.8rem;
+	border-radius: 4px;
+	margin: 2px 1px;
+	color: var(--white);
 }

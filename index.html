@@ -16,44 +16,35 @@
 	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/rodchenk.js"></script>
 	<link rel="stylesheet" type="text/css" id="main_style" href="css/light.rodchenk.css">
-	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
 
 </head>
 <body>
-	<header class="p-2">
+	<header class="p-3">
 		<div class="container-fluid row mb-0">
-			<div class="col-3">
-				<img src="img/logo.png" class="img-fluid" style="max-height: 30px; vertical-align: text-top;">
-			</div>
+			<div class="col-3" id="logo"></div>
 			<div class="col-6 text-center navig">
 				<div class="d-inline-block mx-3 px-2">
-					<a class="translate p-1" href="#" data-word="start">Start</a>
+					<a class="translate p-1" href="#" data-word="start">About me</a>
 				</div>
 				<div class="d-inline-block mx-3 px-2">
 					<a class="translate p-1" href="#" data-word="portfolio">Portfolio</a>
-				</div>
-				<div class="d-inline-block mx-3 px-2">
-					<a class="translate p-1" href="#" data-word="projects">Projects</a>
-				</div>
-				<div class="d-inline-block mx-3 px-2">
-					<a class="translate p-1" href="#" data-word="skills">Skills</a>
 				</div>
 				<div class="d-inline-block mx-3 px-2">
 					<a class="translate p-1" href="#" data-word="contact">Contact</a>
 				</div>
 			</div>
 			<div class="switch col-3 text-right">
+				
 				<label>
 					<span class="translate" data-word="light">light</span>
 					<input type="checkbox" onchange="switchTheme(this.checked)">
 					<span class="lever"></span>
 					<span class="translate" data-word="dark">dark</span>
 				</label>
-				  <!-- Dropdown Trigger -->
-				<a id="lang-switcher" class="dropdown-trigger btn ml-4" href="#" data-target="lang-drop">
-					en<i class="icon ion-ios-menu ml-2"></i>
+				<a id="lang-switcher" class="dropdown-trigger btn ml-4 btn-floating btn-small waves-effect waves-light" href="#" data-target="lang-drop">
+					<i class="icon ion-ios-color-wand"></i>
 				</a>
-				<!-- Dropdown Structure -->
 				<ul id="lang-drop" class="dropdown-content border-0 shadow rounded">
 					<li>
 						<a href="#!" onclick="switchLanguage('en')">
@@ -74,8 +65,137 @@
 						</a>
 					</li>
 				</ul>
+
 			</div>
 		</div>
 	</header>
+	<main>
+		<div id="cover"></div>
+		<div class="container-fluid p-5" id="about_me_block">
+			<div class="row">
+				<div class="col-6">
+					Geb. in Ukraine am 26. Juni
+				</div>
+				<div class="col-6">
+					<ul style="line-height: 3">
+						<li>
+							<i class="icon ion-ios-code mr-3"></i>
+							<span>Java SE/EE, PHP (+ CakePHP), JS (+ ReactJS, jQuery)</span>
+						</li>
+						<li>
+							<i class="icon ion-ios-color-palette mr-3"></i>
+							<span>HTML, CSS (+ Bootstrap, Materialize), Photoshop</span>
+						</li>
+						<li>
+							<i class="icon ion-ios-git-network mr-3"></i>
+							<span>Git, Tortoise SVN</span>
+						</li>
+						<li>
+							<i class="icon ion-ios-laptop mr-3"></i>
+							<span>JBoss, Apache, TomCat, Camunda</span>
+						</li>
+						<li>
+							<i class="icon ion-ios-cloud-outline mr-3"></i>
+							<span>XML, JSON, MySQL, NoSQL</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid p-5">
+			<h3 class="p-3">My projects</h3>
+			<div class="row">
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/pr1.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Hotel
+								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">Materialize</span>
+							<span class="mbadge">Bootstrap</span>
+							<span class="mbadge">JS libs</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/pr2.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Study block
+								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">JavaScript</span>
+							<span class="mbadge">Bootstrap</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/pr3.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Online shop
+								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">CakePHP</span>
+							<span class="mbadge">MySQL</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/pr4.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Price generator
+								<a href="#" class="ml-4 mb-2 btn float-right">Visit</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">Camunda API</span>
+							<span class="mbadge">CakePHP</span>
+							<span class="mbadge">Java</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/admin.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Admin panel
+								<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">ChartJS</span>
+							<span class="mbadge">CakePHP</span>
+							<span class="mbadge">ReactJS</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 mb-3">
+					<div class="mcard rounded shadow">
+						<img src="img/pr6.png" class="img-fluid rounded-top">
+						<div class="p-3">
+							<h4 class="m-0 p-2">
+								Social network
+								<a href="#" class="ml-4 mb-2 btn float-right" disabled>closed</a>
+							</h4>
+							<p>A small presentation for a hotel</p>
+							<span class="mbadge">JavaScript</span>
+							<span class="mbadge">php</span>
+							<span class="mbadge">RESTful API</span>
+							<span class="mbadge">Java Spring</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
