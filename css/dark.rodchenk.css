@@ -1,7 +1,7 @@
 @import url("color.css");
 
 body{
-	font-family: 'Poiret One', cursive;
+	font-family: 'Raleway', sans-serif;
 	background-color: var(--dark);
 	min-height: 100vh;
 	transition: 1000ms;
@@ -24,9 +24,45 @@ a.btn:hover{
 	height: unset !important;
 }
 .navig a{
+	position: relative;
 	transition: 250ms;
-	color: var(--teal);
+	color: var(--light);
+	vertical-align: sub;
+	cursor: pointer;
+}
+.navig a::after{
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 49%;
+	width: 2px;
+	transition: 250ms;
+	height: 2px;
+	background-color: var(--light-red);
+}
+.navig a:hover::after{
+	width: 100%;
+	left: 0;
+	height: 1px;
 }
 .navig a:hover{
-	color: var(--light);
+	color: var(--light-red);
+}
+#lang-switcher{
+	background-color: var(--light-red)
+}
+.dropdown-content li>a, .dropdown-content li>span{
+	font-size: 1rem;
+}
+.switch label input[type=checkbox]:checked+.lever{
+	background-color: #6b5164;
+}
+.switch label input[type=checkbox]:checked+.lever:after{
+	background-color: #d45d76;
+}
+.btn, .btn-large, .btn-small, .btn-flat{
+	text-transform: none;
+}
+.btn i, .btn-large i, .btn-small i, .btn-floating i, .btn-large i, .btn-small i, .btn-flat i{
+	font-size: 1rem;
 }

@@ -5,7 +5,8 @@ var translation = {
 		start: "Start",
 		portfolio: "Portfolio",
 		contact: "Kontakt",
-		my_name: "Mischa Rodchenkov" 
+		skills: "Skills",
+		projects: "Projekte",
 	},
 	en: {
 		light: "dark",
@@ -13,7 +14,8 @@ var translation = {
 		start: "Start",
 		portfolio: "Portfolio",
 		contact: "Contact",
-		my_name: "Misha Rodchenkov" 
+		skills: "Skills",
+		projects: "Projects",
 	},
 	ru: {
 		light: "день",
@@ -21,6 +23,7 @@ var translation = {
 		start: "Старт",
 		portfolio: "Портфолио",
 		contact: "Контакт",
-		my_name: "Миша Родченков" 
+		skills: "Скилы",
+		projects: "Проекты",
 	}
 }
