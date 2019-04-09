@@ -1,7 +1,6 @@
 $(document).ready(function(e){
 	var elems = document.querySelectorAll('.dropdown-trigger');
     var instances = M.Dropdown.init(elems, {constrainWidth: false});
-    $('.parallax').parallax();
 });
 
 function switchTheme(e){
@@ -9,7 +8,6 @@ function switchTheme(e){
 	style.href = 'css/' + (e ? 'dark.rodchenk.css' : 'light.rodchenk.css');
 }
 function switchLanguage(lang){
-	//document.getElementById('lang-switcher').text = lang;
 	setTranslation(lang);
 }
 function translate(word, language){
