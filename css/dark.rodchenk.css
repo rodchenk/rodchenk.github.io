@@ -180,3 +180,7 @@ html {
 #skills_block ul>li {
 	color: var(--white);
 }
+::selection{
+	background-color: var(--light-red);
+	color: white;
+}

@@ -134,3 +134,7 @@ div.slick-list.draggable{
 #skills_block ul>li {
 	color: var(--dark);
 }
+::selection{
+	background-color: var(--teal);
+	color: white;
+}
