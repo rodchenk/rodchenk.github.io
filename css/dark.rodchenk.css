@@ -5,6 +5,11 @@ body{
 	background-color: var(--dark);
 	min-height: 100vh;
 	transition: 1000ms;
+
+	perspective: 1px; 
+	transform-style: preserve-3d;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 header{
 	background-color: var(--dark);
@@ -73,8 +78,14 @@ a.btn:hover{
 	height: 28px;
 	background-repeat: no-repeat;
 }
-#about_me_block ul li i{
+#about_me_block ul>li>a>i{
 	color: var(--light-red);
+	font-size: 3rem;
+	padding: 1rem;
+	transition: 250ms;
+}
+#about_me_block ul>li>a>i:hover{
+	color: white;
 }
 #about_me_block {
 	color: var(--light);
@@ -136,4 +147,36 @@ div.slick-list.draggable{
 }
 a.btn{
 	background-color: var(--light-red)
+}
+
+.mparallax {
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100vw;
+}
+.mparallax::before{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: -1;
+	transform-origin: center;
+	min-height: 100vh;
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	transform: translateZ(-1px) scale(2);
+}
+html {
+  height: 100%;
+  overflow: hidden;
+}
+#skills_block ul>li i{
+	color: var(--light-red);
+}
+#skills_block ul>li {
+	color: var(--white);
 }
