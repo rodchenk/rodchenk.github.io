@@ -164,19 +164,19 @@ a.btn{
 }
 .mparallax::before{
 	content: '';
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	z-index: -1;
-	transform-origin: center;
-	max-height: 100vh;
-	background-image: url(../img/bg.png);
-	background-repeat: no-repeat;
-	background-size: contain;
-	transform: translateZ(-1px) scale(2);
+    display: block;
+    position: absolute;
+    left: -8px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: bottom;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateZ(-2px) scale(3) translateY(350px);
 }
 #skills_block ul>li i{
 	color: var(--light-red);
