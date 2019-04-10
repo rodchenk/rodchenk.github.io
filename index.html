@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Mischa Rodchenkov</title>
 	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
 	<script type="text/javascript" src="js/lib/bootstrap.bundle.min.js"></script>
@@ -26,11 +27,8 @@
 <body>
 	<header class="p-3 sticky-top">
 		<div class="container-fluid row mb-0">
-			<div class="col-3" id="logo"></div>
-			<div class="col-6 text-center navig">
-			</div>
-			<div class="switch col-3 text-right">
-				
+			<div class="col-4" id="logo"></div>
+			<div class="switch col-8 text-right">
 				<label>
 					<span class="translate" data-word="light">light</span>
 					<input type="checkbox" checked="checked" onchange="switchTheme(this.checked)">
@@ -69,8 +67,8 @@
 	
 		<div class="container-fluid p-5" id="about_me_block">
 			<div class="row">
-				<div class="col-2">
-					<ul class="text-left">
+				<div class="col-sm-10 mx-sm-auto col-md-2 col-lg-2">
+					<ul class="text-left list-horizontal-sm">
 						<li>
 							<a href="https://github.com/rodchenk"><i class="icon ion-logo-github"></i></a>
 						</li>
@@ -85,9 +83,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-6 mx-auto">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
 					<img src="img/me.jpg" class="img-fluid p-3" style="width: 150px; height: 150px;border-radius: 50%; object-fit: cover;">
-					<div class="d-inline-block">
+					<div class="d-inline-block mb-sm-4">
 						<h5 class="d-inline-block font-weight-bold mb-1 translate" data-word="my_name">Misha Rodchenkov</h5>
 						<br>
 						<small class="translate" data-word="position">Java Software Developer, iCode Berlin</small>
@@ -189,27 +187,27 @@
 		</div>
 		<div class="container-fluid p-4" id="skills_block">
 			<div class="row">
-				<div class="col-6 pl-5">
+				<div class="col-sm-12 col-md-8 mx-md-auto col-lg-6 pr-5 text-right">
 					<ul style="line-height: 3">
 						<li>
-							<i class="icon ion-ios-code mr-3"></i>
 							<span>Java SE/EE, PHP (+ CakePHP), JS (+ ReactJS, jQuery)</span>
+							<i class="icon ion-ios-code ml-3"></i>
 						</li>
 						<li>
-							<i class="icon ion-ios-color-palette mr-3"></i>
 							<span>HTML, CSS (+ Bootstrap, Materialize), Photoshop</span>
+							<i class="icon ion-ios-color-palette ml-3"></i>
 						</li>
 						<li>
-							<i class="icon ion-ios-git-network mr-3"></i>
 							<span>Git, Tortoise SVN, Unix-Systems</span>
+							<i class="icon ion-ios-git-network ml-3"></i>
 						</li>
 						<li>
-							<i class="icon ion-ios-laptop mr-3"></i>
 							<span>JBoss, Apache, TomCat, Camunda</span>
+							<i class="icon ion-ios-laptop ml-3"></i>
 						</li>
 					</ul>
 				</div>
-				<div class="col-6">
+				<div class="col-sm-12 col-md-8 mx-md-auto col-lg-6">
 					<ul style="line-height: 3">	
 						<li>
 							<i class="icon ion-ios-cloud-outline mr-3"></i>
@@ -223,16 +221,22 @@
 							<i class="icon ion-ios-calculator mr-3"></i>
 							<span class="translate" data-word="list_item">ISQI Software Project Management Certificate, Oracle Java Attestation</span>
 						</li>
+						<li>
+							<i class="icon ion-ios-calculator mr-3"></i>
+							<span class="translate" data-word="list_item">ISQI Software Project Management Certificate, Oracle Java Attestation</span>
+						</li>
 					</ul>
-					<div class="text-left">
+					
+				</div>
+				<div class="col-12 text-center">
 						<a href="https://github.com/rodchenk" class="btn px-3 text-white mr-3 grey darken-3">
 							<i class="icon ion-logo-github mr-2"></i>Github
 						</a>
 						<a href="./design" class="btn px-3 text-white translate" data-word="design_btn">Design portfolio</a>
 					</div>	
-				</div>
 			</div>
 		</div>
+		<!-- <div class="container bg-warning" style="height: 200vh"></div> -->
 	</main>
 </body>
 </html>

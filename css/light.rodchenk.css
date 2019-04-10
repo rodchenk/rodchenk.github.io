@@ -138,3 +138,17 @@ div.slick-list.draggable{
 	background-color: var(--teal);
 	color: white;
 }
+@media (max-width: 768px){
+	.list-horizontal-sm{
+		position: relative;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	    -ms-flex-align: center;
+	    align-items: center;
+	    -ms-flex-pack: justify;
+	    justify-content: space-between;
+	    padding: .5rem 1rem;
+	}
+}
