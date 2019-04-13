@@ -32,7 +32,7 @@ var translation = {
 		projects: 	"Projects",
 		my_name: 	"Misha Rodchenkov",
 		position: 	"Java Software Developer, iCode Berlin",
-		my_bio: 	"I was born in Crimea (Ukraine), 1993. I study business informatics at Univeristy Brandenburg, Germany. Since 2017 I am working for iCode as Software Developer. My hobbies are wild traveling and Web Design. If you want to get in touch with me for propositions or ask me for SV, write email to:",
+		my_bio: 	"I was born in Crimea (Ukraine), 1993. I study business informatics at Univeristy Brandenburg, Germany. I work for iCode since 2017 as Software Developer. My hobbies are wild traveling and Web Design. If you want to get in touch with me for propositions or ask me for SV, write email to:",
 		design_btn: "Design Portfolio",
 		list_item: 	"ISQI Software Project Management Certificate, Oracle Java Attestation",
 		see: 		"See",
