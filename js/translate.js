@@ -39,7 +39,7 @@ var translation = {
 		list_item: 	"ISQI Software Project Management Certificate, Oracle Java Attestation",
 		see: 		"Explore",
 		closed: 	"Closed",
-		readyhire: 	"Ready to be hired", 
+		readyhire: 	"Free", 
 		mir_desc: 	"Java based general purpose Language for those who appreciate simplicity",
 		xenia_desc: "Domain specific Language to generate static web sites basen on simple logic",
 		p1_desc: 	"A small presentation of future website for a hotel (in russian)",
