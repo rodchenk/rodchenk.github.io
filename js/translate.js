@@ -35,7 +35,7 @@ var translation = {
 		my_bio: 	"I was born in Crimea (Ukraine), 1993. I study business informatics at Univeristy Brandenburg, Germany. I work for iCode since 2017 as Software Developer. My hobbies are wild traveling and Web Design. If you want to get in touch with me for propositions or ask me for SV, write email to:",
 		design_btn: "Design Portfolio",
 		list_item: 	"ISQI Software Project Management Certificate, Oracle Java Attestation",
-		see: 		"See",
+		see: 		"Explore",
 		closed: 	"Closed",
 		readyhire: 	"Ready to be hired", 
 		p1_desc: 	"A small presentation of future website for a hotel (in russian)",
